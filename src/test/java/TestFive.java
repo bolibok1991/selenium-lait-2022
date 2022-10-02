@@ -77,7 +77,7 @@ public class TestFive {
     @Test
     public void testlocalFile() {
         driver.get("file:///Users/bolib/OneDrive/Pulpit/KURS/selenium-lait-2022/home.html");
-        String text = driver.findElement(By.xpath("//p")).getText();
+        String text = driver.findElement(By.xpath("/html/body/p")).getText();
         Assert.assertEquals("to jest tekst", text);
     }
 
